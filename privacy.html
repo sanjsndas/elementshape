@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Elements Shape Living</title>
+  <meta name="description" content="About Elements Shape Living: an independent editorial journal on interior design, architecture, and material culture. Our mission, editors, and principles.">
+  <meta name="author" content="Elements Shape Living">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://elementsshapeliving.com/about.html">
+  <meta property="og:title" content="About — Elements Shape Living">
+  <meta property="og:description" content="An independent editorial journal on interior design, architecture, and material culture.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://elementsshapeliving.com/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Elements Shape Living",
+    "description": "Mission, editorial principles, and contributors of Elements Shape Living.",
+    "url": "https://elementsshapeliving.com/about.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Elements Shape Living"
+    }
+  }
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --ink: #1a1a1a; --ink-light: #3d3d3d; --paper: #fcfaf7; --paper-warm: #f6f3ee;
+      --stone: #e8e2d9; --accent: #b85c38; --accent-soft: #d9b8a4; --rule: #ddd6cc;
+      --font-serif: 'Georgia', 'Times New Roman', serif;
+      --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px; --content-width: 720px;
+    }
+    html { scroll-behavior: smooth; font-size: 100%; }
+    body { background-color: var(--paper); color: var(--ink); font-family: var(--font-serif); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--ink); text-decoration: none; transition: color 0.2s ease; }
+    a:hover { color: var(--accent); }
+    h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 400; line-height: 1.25; color: var(--ink); }
+    h1 { font-size: 2.6rem; letter-spacing: -0.02em; }
+    h2 { font-size: 1.9rem; letter-spacing: -0.01em; }
+    h3 { font-size: 1.4rem; }
+    h4 { font-size: 1.15rem; }
+    p { margin-bottom: 1.2rem; font-size: 1.05rem; color: var(--ink-light); }
+    .sans { font-family: var(--font-sans); }
+    .small-caps { font-family: var(--font-sans); text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.7rem; font-weight: 600; color: var(--accent); }
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; }
+    .editorial-grid { display: grid; grid-template-columns: 1fr 320px; gap: 3.5rem; align-items: start; }
+    @media (max-width: 900px) { .editorial-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+    .site-header { border-bottom: 1px solid var(--rule); background-color: var(--paper); position: sticky; top: 0; z-index: 100; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 0; flex-wrap: wrap; gap: 1rem; }
+    .logo { display: flex; align-items: baseline; gap: 0.5rem; }
+    .logo-mark { font-size: 1.6rem; font-weight: 700; font-family: var(--font-sans); letter-spacing: -0.04em; color: var(--ink); }
+    .logo-mark span { color: var(--accent); }
+    .logo-tagline { font-family: var(--font-sans); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.18em; color: #8a847c; display: none; }
+    @media (min-width: 700px) { .logo-tagline { display: block; } }
+    .main-nav ul { display: flex; list-style: none; gap: 1.8rem; flex-wrap: wrap; }
+    .main-nav a { font-family: var(--font-sans); font-size: 0.8rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-light); padding-bottom: 0.25rem; border-bottom: 2px solid transparent; transition: border-color 0.2s, color 0.2s; }
+    .main-nav a:hover, .main-nav a.active { color: var(--ink); border-bottom-color: var(--accent); }
+    .search-toggle { background: none; border: 1px solid var(--rule); border-radius: 50%; width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--ink-light); transition: background 0.2s, border-color 0.2s; }
+    .search-toggle:hover { background: var(--paper-warm); border-color: var(--accent-soft); }
+    .search-bar { display: none; width: 100%; padding: 0.8rem 0 1.2rem; border-top: 1px solid var(--rule); margin-top: 0.5rem; }
+    .search-bar.open { display: block; }
+    .search-bar input { width: 100%; padding: 0.9rem 1.2rem; font-family: var(--font-sans); font-size: 0.95rem; border: 1px solid var(--rule); background: var(--paper); border-radius: 2px; color: var(--ink); outline: none; }
+    .search-bar input:focus { border-color: var(--accent); }
+    .about-hero { padding: 3.5rem 0 2.5rem; border-bottom: 1px solid var(--rule); margin-bottom: 3rem; }
+    .about-hero h1 { font-size: 3rem; letter-spacing: -0.03em; margin-bottom: 1rem; max-width: 820px; }
+    .about-hero .lead { font-size: 1.35rem; line-height: 1.5; color: var(--ink-light); max-width: 720px; font-style: italic; }
+    @media (max-width: 600px) { .about-hero h1 { font-size: 2.2rem; } .about-hero .lead { font-size: 1.15rem; } }
+    .mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; margin-bottom: 3.5rem; }
+    .mission-grid .mission-text p { font-size: 1.1rem; }
+    .mission-grid .mission-text p:first-of-type::first-letter { font-size: 3.2rem; float: left; line-height: 0.85; padding-right: 0.6rem; padding-top: 0.15rem; color: var(--accent); font-family: var(--font-serif); font-weight: 400; }
+    .mission-image { aspect-ratio: 4/5; object-fit: cover; border-radius: 2px; }
+    @media (max-width: 750px) { .mission-grid { grid-template-columns: 1fr; gap: 2rem; } .mission-image { aspect-ratio: 16/9; } }
+    .principles { margin: 3.5rem 0; padding: 2.5rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+    .principles h2 { margin-bottom: 2rem; }
+    .principle-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    @media (max-width: 750px) { .principle-grid { grid-template-columns: 1fr; gap: 1.5rem; } }
+    .principle { border-top: 2px solid var(--ink); padding-top: 1.2rem; }
+    .principle .number { font-family: var(--font-sans); font-size: 0.75rem; font-weight: 700; color: var(--accent); letter-spacing: 0.08em; margin-bottom: 0.6rem; display: block; }
+    .principle h3 { font-size: 1.25rem; margin-bottom: 0.6rem; }
+    .principle p { font-size: 0.95rem; margin-bottom: 0; }
+    .team-section { margin: 3.5rem 0; }
+    .team-section h2 { margin-bottom: 0.8rem; }
+    .team-section .section-intro { max-width: 650px; margin-bottom: 2.5rem; font-size: 1.05rem; }
+    .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; }
+    @media (max-width: 800px) { .team-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 500px) { .team-grid { grid-template-columns: 1fr; } }
+    .team-member { text-align: left; }
+    .team-member img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px; margin-bottom: 1rem; filter: grayscale(15%); transition: filter 0.3s; }
+    .team-member:hover img { filter: grayscale(0%); }
+    .team-member h3 { font-size: 1.2rem; margin-bottom: 0.2rem; }
+    .team-member .role { font-family: var(--font-sans); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.7rem; font-weight: 600; }
+    .team-member p { font-size: 0.9rem; color: var(--ink-light); margin-bottom: 0.5rem; }
+    .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin: 3.5rem 0; padding: 2.5rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); text-align: center; }
+    @media (max-width: 600px) { .stats-row { grid-template-columns: 1fr 1fr; gap: 1.5rem; } }
+    .stat-item .stat-number { font-family: var(--font-serif); font-size: 2.4rem; color: var(--accent); line-height: 1; margin-bottom: 0.4rem; }
+    .stat-item .stat-label { font-family: var(--font-sans); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #8a847c; }
+    .info-section { margin: 3rem 0; padding: 2rem 0; border-top: 1px solid var(--rule); }
+    .info-section h2 { font-size: 1.5rem; margin-bottom: 1.2rem; }
+    .info-section p { max-width: 700px; font-size: 0.98rem; }
+    .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; margin-top: 1.5rem; }
+    .info-grid h3 { font-size: 1.1rem; margin-bottom: 0.6rem; }
+    .info-grid p { font-size: 0.9rem; }
+    .sidebar { position: sticky; top: 100px; }
+    .sidebar-widget { margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--rule); }
+    .sidebar-widget:last-child { border-bottom: none; }
+    .sidebar-widget h4 { font-family: var(--font-sans); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent); margin-bottom: 1.2rem; font-weight: 600; }
+    .sidebar-widget ul { list-style: none; }
+    .sidebar-widget li { margin-bottom: 0.9rem; padding-bottom: 0.9rem; border-bottom: 1px dotted var(--rule); }
+    .sidebar-widget li:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .sidebar-widget li a { font-size: 0.95rem; line-height: 1.4; display: block; }
+    .sidebar-widget .author-card { display: flex; gap: 1rem; align-items: center; }
+    .sidebar-widget .author-card img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; }
+    .sidebar-widget .author-card p { font-size: 0.85rem; margin-bottom: 0.15rem; }
+    .tag-cloud { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .tag-cloud a { font-family: var(--font-sans); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.3rem 0.8rem; background: var(--paper-warm); border-radius: 20px; color: var(--ink-light); transition: background 0.2s; }
+    .tag-cloud a:hover { background: var(--stone); color: var(--ink); }
+    .site-footer { border-top: 1px solid var(--rule); background: var(--paper-warm); padding: 3.5rem 0 2.5rem; margin-top: 3rem; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2.5rem; }
+    @media (max-width: 800px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 500px) { .footer-grid { grid-template-columns: 1fr; } }
+    .footer-brand .logo-mark { font-size: 1.4rem; margin-bottom: 0.8rem; display: block; }
+    .footer-brand p { font-size: 0.85rem; max-width: 300px; color: #6b6560; }
+    .footer-col h4 { font-family: var(--font-sans); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink); margin-bottom: 1rem; font-weight: 600; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 0.6rem; }
+    .footer-col a { font-size: 0.85rem; color: #6b6560; }
+    .footer-col a:hover { color: var(--accent); }
+    .footer-bottom { border-top: 1px solid var(--rule); padding-top: 1.5rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; font-size: 0.75rem; font-family: var(--font-sans); color: #8a847c; }
+    .footer-bottom a { color: #8a847c; }
+    .footer-bottom a:hover { color: var(--accent); }
+    .meta-item { font-family: var(--font-sans); font-size: 0.72rem; color: #8a847c; text-transform: uppercase; letter-spacing: 0.04em; }
+    .dot { width: 3px; height: 3px; background: #c4bdb4; border-radius: 50%; display: inline-block; margin: 0 0.5rem; }
+    .hidden { display: none !important; }
+    @media (max-width: 600px) { h1 { font-size: 1.9rem; } h2 { font-size: 1.5rem; } .container { padding: 0 1rem; } }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="Elements Shape Living home">
+          <span class="logo-mark">ELEMENTS<span>·</span>SHAPE</span>
+          <span class="logo-tagline">Interior & Architecture Journal</span>
+        </a>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="categories.html">Categories</a></li>
+          </ul>
+        </nav>
+        <button class="search-toggle" aria-label="Toggle search" id="searchToggle">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+        </button>
+      </div>
+      <div class="search-bar" id="searchBar">
+        <input type="search" id="searchInput" placeholder="Search articles…" aria-label="Search articles">
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main class="container">
+
+    <!-- ABOUT HERO -->
+    <section class="about-hero">
+      <span class="small-caps">About the Journal</span>
+      <h1>We write about the spaces that shape how we live.</h1>
+      <p class="lead">Elements Shape Living is an independent editorial publication devoted to interior design, residential architecture, and the materials that give form to daily life.</p>
+    </section>
+
+    <div class="editorial-grid">
+
+      <!-- ===== MAIN CONTENT COLUMN ===== -->
+      <div class="main-content">
+
+        <!-- MISSION -->
+        <section class="mission-grid" id="mission">
+          <div class="mission-text">
+            <span class="small-caps" style="display:block; margin-bottom:1rem;">Our Mission</span>
+            <p>Good design is not a luxury — it is a form of care. It shapes how we rest, gather, work, and recover. And yet, so much of the conversation around design is either superficial or inaccessible. We started Elements Shape Living to change that.</p>
+            <p>Our mission is to publish rigorous, readable journalism about the built environment: the choices behind a well-proportioned room, the chemistry of a lime plaster, the economics of a passive house. We believe that understanding how things are made makes us better stewards of the places we inhabit.</p>
+            <p>We are reader-supported and editorially independent. We do not accept sponsored content, and we do not publish articles to sell products. Every recommendation is earned.</p>
+          </div>
+          <img class="mission-image" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=1000&fit=crop" alt="Sunlit interior with linen sofa, oak floor, and large windows overlooking a garden">
+        </section>
+
+        <!-- PRINCIPLES -->
+        <section class="principles" id="principles">
+          <span class="small-caps" style="display:block; margin-bottom:1rem;">Editorial Principles</span>
+          <h2>What we stand for</h2>
+          <div class="principle-grid">
+            <div class="principle">
+              <span class="number">01</span>
+              <h3>Depth over speed</h3>
+              <p>We publish fewer articles, but each one is researched, reported, and edited with care. We would rather be right than first.</p>
+            </div>
+            <div class="principle">
+              <span class="number">02</span>
+              <h3>Evidence, not taste</h3>
+              <p>We explain the why behind the what — building science, material properties, historical context — so readers can make their own informed choices.</p>
+            </div>
+            <div class="principle">
+              <span class="number">03</span>
+              <h3>Design for everyone</h3>
+              <p>We write for renters and homeowners, students and practitioners. Good design writing should not require a degree to understand.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- TEAM -->
+        <section class="team-section" id="team">
+          <span class="small-caps" style="display:block; margin-bottom:0.8rem;">The People</span>
+          <h2>Editors & Contributors</h2>
+          <p class="section-intro">Our team brings together architects, designers, writers, and researchers. We are based in Portland, London, and Copenhagen, but our contributors write from wherever good design is happening.</p>
+
+          <div class="team-grid">
+
+            <div class="team-member">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=600&fit=crop&crop=face" alt="Portrait of Elena Marchetti, Editor-in-Chief">
+              <h3>Elena Marchetti</h3>
+              <div class="role">Editor-in-Chief</div>
+              <p>Architect and writer. Formerly at Herzog & de Meuron. Elena founded the journal in 2021 after a decade of practice in residential architecture.</p>
+            </div>
+
+            <div class="team-member">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop&crop=face" alt="Portrait of Marcus Chen, Senior Editor, Architecture">
+              <h3>Marcus Chen</h3>
+              <div class="role">Senior Editor, Architecture</div>
+              <p>Marcus is a registered architect and educator. He writes about housing, urbanism, and the intersection of policy and design.</p>
+            </div>
+
+            <div class="team-member">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&h=600&fit=crop&crop=face" alt="Portrait of Priya Nair, Materials Editor">
+              <h3>Priya Nair</h3>
+              <div class="role">Materials Editor</div>
+              <p>A material scientist by training, Priya translates technical specifications into practical guidance for designers and homeowners.</p>
+            </div>
+
+            <div class="team-member">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=600&fit=crop&crop=face" alt="Portrait of James Okafor, Lighting & Interiors Editor">
+              <h3>James Okafor</h3>
+              <div class="role">Lighting & Interiors Editor</div>
+              <p>James is a lighting designer and former theatre electrician. He writes about the psychology of light and the craft of layering.</p>
+            </div>
+
+            <div class="team-member">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=600&fit=crop&crop=face" alt="Portrait of Sofia Lindqvist, Sustainability Editor">
+              <h3>Sofia Lindqvist</h3>
+              <div class="role">Sustainability Editor</div>
+              <p>Sofia is a building physicist and passive house consultant. She covers energy modelling, retrofit, and low-carbon construction.</p>
+            </div>
+
+            <div class="team-member">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=600&fit=crop&crop=face" alt="Portrait of Thomas Rivera, Contributing Photographer">
+              <h3>Thomas Rivera</h3>
+              <div class="role">Contributing Photographer</div>
+              <p>Thomas documents architecture and interiors across the Americas. His work has appeared in Dwell, Architectural Record, and The New York Times.</p>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- STATS -->
+        <div class="stats-row">
+          <div class="stat-item">
+            <div class="stat-number">12k+</div>
+            <div class="stat-label">Newsletter readers</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">240</div>
+            <div class="stat-label">Articles published</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">18</div>
+            <div class="stat-label">Contributors worldwide</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">0</div>
+            <div class="stat-label">Sponsored posts</div>
+          </div>
+        </div>
+
+        <!-- HOW WE WORK -->
+        <section class="info-section" id="how-we-work">
+          <h2>How we work</h2>
+          <p>Every article begins with a question — usually one we cannot answer ourselves. We then research, interview practitioners, visit projects where possible, and edit for clarity. Drafts are reviewed by at least two editors and, where relevant, by a subject-matter expert.</p>
+          <p>We are transparent about uncertainty. When the evidence is mixed, we say so. When a material's green credentials are overstated, we report that too.</p>
+        </section>
+
+        <!-- CORRECTIONS -->
+        <section class="info-section" id="corrections">
+          <h2>Corrections</h2>
+          <p>We take accuracy seriously. If you spot an error, please write to <a href="mailto:corrections@elementsshapeliving.com">corrections@elementsshapeliving.com</a>. We publish corrections promptly and transparently.</p>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="info-section" id="contact-about">
+          <h2>Contact</h2>
+          <div class="info-grid">
+            <div>
+              <h3>Editorial</h3>
+              <p>Pitches, feedback, and corrections:<br><a href="mailto:editor@elementsshapeliving.com">editor@elementsshapeliving.com</a></p>
+            </div>
+            <div>
+              <h3>Partnerships</h3>
+              <p>We work with a small number of aligned brands:<br><a href="mailto:partners@elementsshapeliving.com">partners@elementsshapeliving.com</a></p>
+            </div>
+            <div>
+              <h3>Postal</h3>
+              <p>123 Editorial Lane, Suite 4<br>Portland, OR 97205<br>United States</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- WRITE FOR US -->
+        <section class="info-section" id="write-for-us">
+          <h2>Write for us</h2>
+          <p>We welcome pitches from architects, designers, historians, and journalists. We pay for accepted work. Send a short proposal (200 words) and a link to two relevant writing samples to <a href="mailto:pitch@elementsshapeliving.com">pitch@elementsshapeliving.com</a>.</p>
+        </section>
+
+      </div><!-- /main-content -->
+
+      <!-- ===== SIDEBAR ===== -->
+      <aside class="sidebar" aria-label="Sidebar">
+
+        <!-- On this page -->
+        <div class="sidebar-widget">
+          <h4>On this page</h4>
+          <ul>
+            <li><a href="#mission">Our Mission</a></li>
+            <li><a href="#principles">Editorial Principles</a></li>
+            <li><a href="#team">Editors & Contributors</a></li>
+            <li><a href="#how-we-work">How We Work</a></li>
+            <li><a href="#corrections">Corrections</a></li>
+            <li><a href="#contact-about">Contact</a></li>
+            <li><a href="#write-for-us">Write for Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Editor -->
+        <div class="sidebar-widget">
+          <h4>Editor-in-Chief</h4>
+          <div class="author-card">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&h=120&fit=crop&crop=face" alt="Portrait of Elena Marchetti, Editor-in-Chief">
+            <div>
+              <p><strong>Elena Marchetti</strong></p>
+              <p style="font-size:0.8rem; color:#8a847c;">Architect, writer, and advocate for slow design.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Topics -->
+        <div class="sidebar-widget">
+          <h4>Topics we cover</h4>
+          <div class="tag-cloud">
+            <a href="#">Residential</a>
+            <a href="#">Materials</a>
+            <a href="#">Lighting</a>
+            <a href="#">Small Spaces</a>
+            <a href="#">Sustainability</a>
+            <a href="#">Color</a>
+            <a href="#">Furniture</a>
+            <a href="#">Renovation</a>
+            <a href="#">Floor Plans</a>
+            <a href="#">Facades</a>
+          </div>
+        </div>
+
+        <!-- Newsletter Mini -->
+        <div class="sidebar-widget">
+          <h4>The Sunday Edit</h4>
+          <p style="font-size:0.9rem; margin-bottom:1rem;">Weekly essays and guides. Join 12,000+ readers.</p>
+          <form id="sidebarNewsletter" style="display:flex; flex-direction:column; gap:0.6rem;">
+            <input type="email" placeholder="Email address" required style="padding:0.7rem 1rem; font-family:var(--font-sans); font-size:0.85rem; border:1px solid var(--rule); background:var(--paper); border-radius:2px; outline:none;">
+            <button type="submit" style="font-family:var(--font-sans); font-size:0.7rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; padding:0.7rem; background:var(--ink); color:var(--paper); border:none; border-radius:2px; cursor:pointer;">Subscribe</button>
+          </form>
+        </div>
+
+      </aside>
+    </div><!-- /editorial-grid -->
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-mark">ELEMENTS<span>·</span>SHAPE</span>
+          <p>Independent editorial on interior design, architecture, and material culture. Reader-supported since 2021.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="categories.html">Categories</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:editor@elementsshapeliving.com">editor@elementsshapeliving.com</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Elements Shape Living. All rights reserved.</span>
+        <span>Made with care in Portland, London & Copenhagen.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== INLINE SCRIPT ========== -->
+  <script>
+    (function(){
+      // Search toggle
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBar = document.getElementById('searchBar');
+      const searchInput = document.getElementById('searchInput');
+
+      searchToggle.addEventListener('click', function() {
+        searchBar.classList.toggle('open');
+        if (searchBar.classList.contains('open')) {
+          searchInput.focus();
+        }
+      });
+
+      // Newsletter form
+      const form = document.getElementById('sidebarNewsletter');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const btn = form.querySelector('button');
+          const originalText = btn.textContent;
+          btn.textContent = 'Subscribed ✓';
+          btn.style.background = '#b85c38';
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '';
+            form.reset();
+          }, 2500);
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>

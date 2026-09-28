@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Elements Shape Living</title>
+  <meta name="description" content="Get in touch with the editorial team at Elements Shape Living. Pitches, corrections, feedback, and partnership inquiries.">
+  <meta name="author" content="Elements Shape Living">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://elementsshapeliving.com/contact.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact — Elements Shape Living">
+  <meta property="og:description" content="Get in touch with the editorial team at Elements Shape Living.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://elementsshapeliving.com/contact.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Elements Shape Living",
+    "description": "Contact the editorial team at Elements Shape Living.",
+    "url": "https://elementsshapeliving.com/contact.html"
+  }
+  </script>
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1a1a1a;
+      --ink-light: #3d3d3d;
+      --paper: #fcfaf7;
+      --paper-warm: #f6f3ee;
+      --stone: #e8e2d9;
+      --accent: #b85c38;
+      --accent-soft: #d9b8a4;
+      --rule: #ddd6cc;
+      --font-serif: 'Georgia', 'Times New Roman', serif;
+      --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --content-width: 720px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 100%;
+    }
+
+    body {
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-serif);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      line-height: 1.25;
+      color: var(--ink);
+    }
+
+    h1 { font-size: 2.6rem; letter-spacing: -0.02em; }
+    h2 { font-size: 1.9rem; letter-spacing: -0.01em; }
+    h3 { font-size: 1.4rem; }
+    h4 { font-size: 1.15rem; }
+
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+      color: var(--ink-light);
+    }
+
+    .sans { font-family: var(--font-sans); }
+    .small-caps {
+      font-family: var(--font-sans);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .editorial-grid {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 3.5rem;
+      align-items: start;
+    }
+
+    @media (max-width: 900px) {
+      .editorial-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--rule);
+      background-color: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 0;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+    }
+
+    .logo-mark {
+      font-size: 1.6rem;
+      font-weight: 700;
+      font-family: var(--font-sans);
+      letter-spacing: -0.04em;
+      color: var(--ink);
+    }
+
+    .logo-mark span {
+      color: var(--accent);
+    }
+
+    .logo-tagline {
+      font-family: var(--font-sans);
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #8a847c;
+      display: none;
+    }
+
+    @media (min-width: 700px) {
+      .logo-tagline { display: block; }
+    }
+
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.8rem;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--ink-light);
+      padding-bottom: 0.25rem;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--rule);
+      border-radius: 50%;
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--ink-light);
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .search-toggle:hover {
+      background: var(--paper-warm);
+      border-color: var(--accent-soft);
+    }
+
+    .search-bar {
+      display: none;
+      width: 100%;
+      padding: 0.8rem 0 1.2rem;
+      border-top: 1px solid var(--rule);
+      margin-top: 0.5rem;
+    }
+
+    .search-bar.open {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 0.9rem 1.2rem;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      border: 1px solid var(--rule);
+      background: var(--paper);
+      border-radius: 2px;
+      color: var(--ink);
+      outline: none;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    /* ---------- PAGE HEADER ---------- */
+    .page-header {
+      padding: 3.5rem 0 2rem;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 2.5rem;
+    }
+
+    .page-header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-header .subhead {
+      font-size: 1.1rem;
+      color: #6b6560;
+      max-width: 600px;
+    }
+
+    @media (max-width: 600px) {
+      .page-header h1 { font-size: 1.9rem; }
+    }
+
+    /* ---------- CONTACT SECTION ---------- */
+    .contact-section {
+      margin-bottom: 3rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (max-width: 700px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    .contact-card {
+      background: var(--paper-warm);
+      border: 1px solid var(--rule);
+      padding: 2rem;
+      border-radius: 2px;
+      transition: border-color 0.2s;
+    }
+
+    .contact-card:hover {
+      border-color: var(--accent-soft);
+    }
+
+    .contact-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .contact-card p {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-card .contact-link {
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent-soft);
+      padding-bottom: 0.1rem;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+
+    .contact-card .contact-link:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .contact-card .address {
+      font-style: normal;
+      color: #6b6560;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .contact-card .hours {
+      font-size: 0.9rem;
+      color: #6b6560;
+      margin-top: 0.5rem;
+    }
+
+    .contact-card .hours strong {
+      color: var(--ink-light);
+    }
+
+    /* ---------- CONTACT FORM ---------- */
+    .form-section {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      padding: 2.5rem;
+      border-radius: 2px;
+    }
+
+    .form-section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-section .form-intro {
+      font-size: 1rem;
+      color: #6b6560;
+      margin-bottom: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink-light);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 0.9rem 1.1rem;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      border: 1px solid var(--rule);
+      background: var(--paper);
+      border-radius: 2px;
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--accent);
+    }
+
+    .form-group textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .form-group select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%233d3d3d' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1.1rem center;
+      padding-right: 2.5rem;
+      cursor: pointer;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+    }
+
+    .form-submit {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .form-submit button {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 1rem 2.2rem;
+      background: var(--ink);
+      color: var(--paper);
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .form-submit button:hover {
+      background: var(--accent);
+    }
+
+    .form-message {
+      font-size: 0.9rem;
+      color: var(--accent);
+      display: none;
+    }
+
+    .form-message.show {
+      display: block;
+    }
+
+    .form-note {
+      font-size: 0.8rem;
+      color: #8a847c;
+      margin-top: 1rem;
+    }
+
+    /* ---------- SIDEBAR ---------- */
+    .sidebar {
+      position: sticky;
+      top: 100px;
+    }
+
+    .sidebar-widget {
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .sidebar-widget:last-child {
+      border-bottom: none;
+    }
+
+    .sidebar-widget h4 {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+      font-weight: 600;
+    }
+
+    .sidebar-widget ul {
+      list-style: none;
+    }
+
+    .sidebar-widget li {
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.9rem;
+      border-bottom: 1px dotted var(--rule);
+    }
+
+    .sidebar-widget li:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .sidebar-widget li a {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      display: block;
+    }
+
+    .sidebar-widget .author-card {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .sidebar-widget .author-card img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .sidebar-widget .author-card p {
+      font-size: 0.85rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tag-cloud a {
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 0.3rem 0.8rem;
+      background: var(--paper-warm);
+      border-radius: 20px;
+      color: var(--ink-light);
+      transition: background 0.2s;
+    }
+
+    .tag-cloud a:hover {
+      background: var(--stone);
+      color: var(--ink);
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      border-top: 1px solid var(--rule);
+      background: var(--paper-warm);
+      padding: 3.5rem 0 2.5rem;
+      margin-top: 3rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    @media (max-width: 800px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-brand .logo-mark {
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+      display: block;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      max-width: 300px;
+      color: #6b6560;
+    }
+
+    .footer-col h4 {
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--ink);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-col a {
+      font-size: 0.85rem;
+      color: #6b6560;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+      font-family: var(--font-sans);
+      color: #8a847c;
+    }
+
+    .footer-bottom a {
+      color: #8a847c;
+    }
+
+    .footer-bottom a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- UTILITIES ---------- */
+    .hidden {
+      display: none !important;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 600px) {
+      h1 { font-size: 1.9rem; }
+      h2 { font-size: 1.5rem; }
+      .container { padding: 0 1rem; }
+      .form-section { padding: 1.8rem; }
+      .contact-card { padding: 1.5rem; }
+      .page-header { padding: 2.5rem 0 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="logo" aria-label="Elements Shape Living home">
+          <span class="logo-mark">ELEMENTS<span>·</span>SHAPE</span>
+          <span class="logo-tagline">Interior & Architecture Journal</span>
+        </a>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="categories.html">Categories</a></li>
+          </ul>
+        </nav>
+        <button class="search-toggle" aria-label="Toggle search" id="searchToggle">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+        </button>
+      </div>
+      <div class="search-bar" id="searchBar">
+        <input type="search" id="searchInput" placeholder="Search articles…" aria-label="Search articles">
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main class="container">
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <span class="small-caps">Get in touch</span>
+      <h1>Contact</h1>
+      <p class="subhead">We welcome pitches, corrections, reader feedback, and partnership inquiries. Our editorial team reads every message.</p>
+    </div>
+
+    <div class="editorial-grid">
+
+      <!-- ===== MAIN CONTENT COLUMN ===== -->
+      <div class="main-content">
+
+        <section class="contact-section" aria-label="Contact information">
+          <div class="contact-grid">
+
+            <!-- Editorial -->
+            <div class="contact-card">
+              <h3>Editorial</h3>
+              <p>For story pitches, corrections, or feedback on our articles.</p>
+              <a href="mailto:editor@elementsshapeliving.com" class="contact-link">editor@elementsshapeliving.com</a>
+              <p class="hours"><strong>Response time:</strong> 2–3 business days</p>
+            </div>
+
+            <!-- Advertising -->
+            <div class="contact-card">
+              <h3>Advertising & Partnerships</h3>
+              <p>We work with a small number of aligned brands on thoughtful collaborations.</p>
+              <a href="mailto:partners@elementsshapeliving.com" class="contact-link">partners@elementsshapeliving.com</a>
+              <p class="hours"><strong>Response time:</strong> 1–2 business days</p>
+            </div>
+
+            <!-- General / Mailing -->
+            <div class="contact-card">
+              <h3>General Inquiries</h3>
+              <p>For anything else, including permissions and reprints.</p>
+              <a href="mailto:hello@elementsshapeliving.com" class="contact-link">hello@elementsshapeliving.com</a>
+            </div>
+
+            <!-- Mailing Address -->
+            <div class="contact-card">
+              <h3>Mailing Address</h3>
+              <address class="address">
+                Elements Shape Living<br>
+                123 Editorial Lane, Suite 4<br>
+                Portland, OR 97205<br>
+                United States
+              </address>
+              <p class="hours"><strong>Office hours:</strong> Mon–Fri, 9am–5pm PT</p>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section class="form-section" aria-label="Contact form">
+          <h2>Send Us a Message</h2>
+          <p class="form-intro">Fill out the form below and we'll get back to you as soon as possible. Required fields are marked with an asterisk (*).</p>
+
+          <form id="contactForm" action="#" method="post" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName">Your Name *</label>
+                <input type="text" id="contactName" name="name" placeholder="Jane Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email Address *</label>
+                <input type="email" id="contactEmail" name="email" placeholder="jane@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject">Subject *</label>
+              <select id="contactSubject" name="subject" required>
+                <option value="" disabled selected>Select a topic…</option>
+                <option value="editorial">Editorial / Story Pitch</option>
+                <option value="correction">Correction or Feedback</option>
+                <option value="advertising">Advertising & Partnerships</option>
+                <option value="permissions">Permissions & Reprints</option>
+                <option value="general">General Inquiry</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Message *</label>
+              <textarea id="contactMessage" name="message" placeholder="Tell us what's on your mind…" required></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit">Send Message</button>
+              <span class="form-message" id="formMessage">Thank you. Your message has been sent. We'll be in touch soon.</span>
+            </div>
+
+            <p class="form-note">By submitting this form, you agree to our <a href="privacy.html" style="color:var(--accent); text-decoration:underline;">Privacy Policy</a>. We never share your information with third parties.</p>
+          </form>
+        </section>
+
+      </div><!-- /main-content -->
+
+      <!-- ===== SIDEBAR ===== -->
+      <aside class="sidebar" aria-label="Sidebar">
+
+        <!-- Popular Articles -->
+        <div class="sidebar-widget">
+          <h4>Most Read</h4>
+          <ul>
+            <li><a href="#">The Quiet Power of Restraint: Why Less Is Still More</a></li>
+            <li><a href="#">A Field Guide to Natural Stone: Marble, Travertine, Limestone</a></li>
+            <li><a href="#">Layered Lighting: The Three-Layer Approach</a></li>
+            <li><a href="#">Small Space, Big Ideas: Apartments Under 60m²</a></li>
+            <li><a href="#">Passive Design in Practice: Orientation & Thermal Mass</a></li>
+          </ul>
+        </div>
+
+        <!-- Editor -->
+        <div class="sidebar-widget">
+          <h4>Editor</h4>
+          <div class="author-card">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&h=120&fit=crop&crop=face" alt="Portrait of Elena Marchetti, Editor-in-Chief">
+            <div>
+              <p><strong>Elena Marchetti</strong></p>
+              <p style="font-size:0.8rem; color:#8a847c;">Editor-in-Chief. Architect, writer, and advocate for slow design.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Topics -->
+        <div class="sidebar-widget">
+          <h4>Topics</h4>
+          <div class="tag-cloud">
+            <a href="#">Residential</a>
+            <a href="#">Materials</a>
+            <a href="#">Lighting</a>
+            <a href="#">Small Spaces</a>
+            <a href="#">Sustainability</a>
+            <a href="#">Color</a>
+            <a href="#">Furniture</a>
+            <a href="#">Renovation</a>
+            <a href="#">Floor Plans</a>
+            <a href="#">Facades</a>
+          </div>
+        </div>
+
+        <!-- Newsletter Mini -->
+        <div class="sidebar-widget">
+          <h4>The Sunday Edit</h4>
+          <p style="font-size:0.9rem; margin-bottom:1rem;">Weekly essays and guides. Join 12,000+ readers.</p>
+          <form id="sidebarNewsletter" style="display:flex; flex-direction:column; gap:0.6rem;">
+            <input type="email" placeholder="Email address" required style="padding:0.7rem 1rem; font-family:var(--font-sans); font-size:0.85rem; border:1px solid var(--rule); background:var(--paper); border-radius:2px; outline:none;">
+            <button type="submit" style="font-family:var(--font-sans); font-size:0.7rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; padding:0.7rem; background:var(--ink); color:var(--paper); border:none; border-radius:2px; cursor:pointer;">Subscribe</button>
+          </form>
+          <p id="sidebarMsg" style="font-size:0.8rem; margin-top:0.5rem; display:none; color:var(--accent);"></p>
+        </div>
+
+      </aside>
+
+    </div><!-- /editorial-grid -->
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-mark">ELEMENTS<span>·</span>SHAPE</span>
+          <p>An independent journal of interior design and architecture. In-depth articles, material guides, and design thinking for people who care about the spaces they inhabit.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#interiors">Interior Design</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#materials">Materials</a></li>
+            <li><a href="#lighting">Lighting</a></li>
+            <li><a href="#spaces">Space Planning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Editorial Guidelines</a></li>
+            <li><a href="#">Write for Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Elements Shape Living. All rights reserved.</span>
+        <span>Made with restraint.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // ---------- SEARCH TOGGLE ----------
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBar = document.getElementById('searchBar');
+      const searchInput = document.getElementById('searchInput');
+
+      searchToggle.addEventListener('click', function() {
+        searchBar.classList.toggle('open');
+        if (searchBar.classList.contains('open')) {
+          searchInput.focus();
+        }
+      });
+
+      // ---------- CONTACT FORM ----------
+      const contactForm = document.getElementById('contactForm');
+      const formMessage = document.getElementById('formMessage');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+
+          // Basic validation
+          const name = document.getElementById('contactName').value.trim();
+          const email = document.getElementById('contactEmail').value.trim();
+          const subject = document.getElementById('contactSubject').value;
+          const message = document.getElementById('contactMessage').value.trim();
+
+          if (!name || !email || !subject || !message) {
+            alert('Please fill in all required fields.');
+            return;
+          }
+
+          // Email validation
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailPattern.test(email)) {
+            alert('Please enter a valid email address.');
+            return;
+          }
+
+          // Show success message
+          formMessage.classList.add('show');
+          contactForm.reset();
+
+          // Hide message after 6 seconds
+          setTimeout(function() {
+            formMessage.classList.remove('show');
+          }, 6000);
+        });
+      }
+
+      // ---------- SIDEBAR NEWSLETTER ----------
+      const sidebarForm = document.getElementById('sidebarNewsletter');
+      const sidebarMsg = document.getElementById('sidebarMsg');
+
+      if (sidebarForm) {
+        sidebarForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const email = this.querySelector('input[type="email"]').value.trim();
+          if (email) {
+            sidebarMsg.textContent = 'Subscribed. Welcome aboard.';
+            sidebarMsg.style.display = 'block';
+            this.querySelector('input[type="email"]').value = '';
+          }
+        });
+      }
+
+      // ---------- SMOOTH SCROLL FOR INTERNAL LINKS ----------
+      document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          const target = document.querySelector(targetId);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+    })();
+  </script>
+</body>
+</html>
